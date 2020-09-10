@@ -13,7 +13,7 @@ class MoviesController < ApplicationController
 
       # @movies = PgSearch.multisearch(params[:query]).map { |pgdoc| pgdoc.searchable }
 
-      @movies = Movie.search(params[:query])
+      # @movies = Movie.search(params[:query])
     else
       @movies = Movie.all
     end
